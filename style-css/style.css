@@ -102,12 +102,13 @@ button.hamburgur {
     transform:rotate(30deg);
 }
 .site-logo img {
-    margin-left: 55px;
+    width: 70px;
+    margin-left: 40px;
 }
 
 .site-logo {
     border-bottom: 2px solid #ededed;
-    padding: 30px 0px;
+    padding: 20px 0px;
     border-top: 2px solid #ededed;
     margin-top: 60px;
     display: flex;
@@ -118,12 +119,12 @@ button.hamburgur {
 .collection-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 20px;
 }
 
 .singleCollection {
     box-shadow: 1px 1px 30px #dbd4d4;
-    padding: 15px;
+    padding: 12px;
     border-radius: 10px;
 }
 
@@ -136,14 +137,14 @@ button.hamburgur {
 }
 
 .collectionRating h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 10px;
     color: #444;
 }
 .ratingIcon {
     color: #f36b2a;
-    font-size: .7em;
-    margin-bottom: 14px;
+    font-size: .53em;
+    margin-bottom: 10px;
 }
 
 .ratingIcon span {
@@ -152,7 +153,7 @@ button.hamburgur {
 }
 
 .ratingMeta p {
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: 5px;
 }
 div#collection h1 {
@@ -173,27 +174,30 @@ a.see-more {
 }
 .product-wrapper {
     display: flex;
-    gap: 100px;
+    gap: 60px;
     align-items: center;
+}
+.product-left-image img {
+    width: 330px;
 }
 
 .product-right-contant h1 {
-    font-size: 35px;
-    color: #444;
+    font-size: 25px;
+    color: #333;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
 .product-right-contant p {
-    width: 86%;
-    font-size: 15px;
-    line-height: 25px;
+    width: 90%;
+    font-size: 12px;
+    line-height: 20px;
     color: #555;
     font-weight: bold;
     margin-bottom: 15px;
 }
 button.join-now-btn {
-    padding: 12px 30px;
+    padding: 10px 30px;
     border: none;
     background: #e53273;
     border-radius: 5px;

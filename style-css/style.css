@@ -34,6 +34,7 @@ body {
 .menu-ber ul {
     display: flex;
     gap: 25px;
+    align-items: center;
 }
 button.hamburgur {
     border: none;

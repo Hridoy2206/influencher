@@ -1,0 +1,366 @@
+body {
+    font-family: sans-serif;
+}
+*{
+    margin: 0px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.top-ber-wrapper {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 35px;
+    color: #1f3a0a;
+}
+
+.menu-ber ul li a {
+    text-decoration: none;
+    color: #444;
+}
+
+.menu-ber ul li {
+    list-style: none;
+}
+
+.menu-ber ul {
+    display: flex;
+    gap: 25px;
+}
+button.hamburgur {
+    border: none;
+    background: none;
+    font-size: 1.4em;
+    display: none;
+}
+.fa-shopping-cart {font-size: 25px;}
+
+.fa-search {
+    font-size: 20px;
+}
+.slider-wrapper {
+    display: flex;
+}
+
+.slider-left-contant {padding-top: 80px;}
+
+.slider-left-contant h1 {
+    font-size: 47px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.slider-left-contant p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #444;
+}
+
+.booking-btn {
+    padding: 12px 25px;
+    border: none;
+    background: #eb4f88;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.booking-btn:hover{
+    background-color:#cc5681;
+}
+
+.booking-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+}
+.slider-right-image {
+    background: url("../circle_design.svg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 21px;
+}
+.slider-right-image img{
+    width: 100%;
+    transition: .5s;
+}
+.slider-right-image:hover img{
+    transform:rotate(30deg);
+}
+.site-logo img {
+    margin-left: 55px;
+}
+
+.site-logo {
+    border-bottom: 2px solid #ededed;
+    padding: 30px 0px;
+    border-top: 2px solid #ededed;
+    margin-top: 60px;
+    display: flex;
+}
+.home-slider{
+    margin-bottom: 100px;
+}
+.collection-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.singleCollection {
+    box-shadow: 1px 1px 30px #dbd4d4;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.singleCollection img {
+    width: 100%;
+}
+
+.collectionRating {
+    margin-top: 15px;
+}
+
+.collectionRating h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #444;
+}
+.ratingIcon {
+    color: #f36b2a;
+    font-size: .7em;
+    margin-bottom: 14px;
+}
+
+.ratingIcon span {
+    color: #333;
+    margin-left: 5px;
+}
+
+.ratingMeta p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+div#collection h1 {
+    text-align: center;
+    font-size: 35px;
+    color: #444;
+    margin-bottom: 40px;
+}
+.collection{
+    margin-bottom: 100px;
+}
+a.see-more {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: #c92862;
+    margin-top: 50px;
+}
+.product-wrapper {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.product-right-contant h1 {
+    font-size: 35px;
+    color: #444;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.product-right-contant p {
+    width: 43%;
+    font-size: 15px;
+    line-height: 25px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+button.join-now-btn {
+    padding: 12px 30px;
+    border: none;
+    background: #e53273;
+    border-radius: 5px;
+}
+
+button.join-now-btn a {
+    color: white;
+    text-decoration: none;
+}
+.products{
+    margin-bottom: 100px;
+}
+section.footer {
+    background: black;
+    color: white;
+}
+
+.footer-wrapper {
+    padding: 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-wrapper h2 {margin-bottom: 10px;}
+
+.footer-wrapper p {
+    font-size: 13px;
+    line-height: 2em;
+    color: #999;
+    text-align: center;
+}
+
+.footer-icon {
+    margin-top: 15px;
+}
+
+.footer-icon a {
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+/* media quary start */
+@media (max-width: 970px) {
+    .collection-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 688px) {
+    .top-ber-wrapper{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .menu-ber ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    .fa-search{
+        margin: auto;
+    }
+    .hamburgur{
+        display: block;
+    }
+    .logo h2{
+        margin-bottom: 20px;
+    }
+    .slider-wrapper{
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+    }
+    .slider-left-contant{
+        text-align: center;
+    }
+    .slider-left-contant h1{
+        font-size: 3.5em;
+    }
+    .slider-left-contant p{
+        font-size: 2em;
+        line-height: 2em;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .booking-btn {
+       border-radius: 50px;
+       padding: 20px 80px;
+       margin-bottom: 50px;
+    }
+    .booking-btn a{
+        font-size: 25px;
+    }
+    .slider-right-image{
+       margin: auto;
+       margin-top: 20px;
+    }
+    .site-logo {
+        border: navajowhite;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .site-logo img{
+        margin: auto;
+        padding-bottom: 30px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .collection-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+   .ratingMeta{
+       font-size: 3em;
+   }
+    .product-wrapper{
+        flex-direction: column;
+        gap: 40px;
+    }
+   .collectionRating h2{
+       font-size: 2em;
+   }
+   .ratingIcon{
+       font-size: 1.3em;
+   }
+   .ratingMeta p{
+       font-size: 21px;
+       color: gray;
+   }
+  .see-more{
+      font-size: 30px;
+  }
+  .product-wrapper{
+      flex-direction: column-reverse;
+  }
+  .product-right-contant h1{
+    font-size: 3em;
+    text-align: center;
+  }
+  .product-right-contant p{
+    font-size: 30px;
+    line-height: 50px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: gray;
+  }
+  .product-right-contant button{
+      padding: 20px 60px;
+      margin: 30px;
+  } 
+  .join-now-btn a{
+      font-size: 30px;
+  }
+  .product-right-contant{
+      text-align: center;
+  }
+ .footer-wrapper h2{
+     font-size: 45px;
+     text-align:center;
+ }
+ .footer-wrapper p{
+     font-size: 30px;
+ }
+ .footer-icon a{
+     font-size: 35px;
+ }
+ .uncomon-image{
+     padding-left: 50px;
+ }
+}
